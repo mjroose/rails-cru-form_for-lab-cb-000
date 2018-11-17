@@ -3,5 +3,5 @@
 <h3>Songs:</h3>
 <ul>
   <% @artist.songs.each do |song| %>
-    <li><%= song.name, link_to song_path(song) %></li>
+    <li><%= link_to song.name, song_path(song) %></li>
 </ul>
